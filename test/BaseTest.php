@@ -4,7 +4,13 @@ use PerryBase\Base2;
 use PerryBase\Base16;
 use PerryBase\Base70;
 
-class BaseTest extends PHPUnit_Framework_TestCase
+if (!class_exists('\PHPUnit\Framework\TestCase') &&
+    class_exists('\PHPUnit_Framework_TestCase'))
+{
+    class_alias('\PHPUnit_Framework_TestCase', 'PHPUnit\Framework\TestCase');
+}
+
+class BaseTest extends \PHPUnit\Framework\TestCase
 {
 
     public function testBase()
