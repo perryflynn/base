@@ -1,0 +1,28 @@
+{
+    "name": "perryflynn/base",
+    "type": "library",
+    "description": "Positional notation converter for PHP.",
+    "license":"MIT",
+    "homepage":"https://github.com/perryflynn/base",
+    "keywords": [ "php", "base", "base16", "base2", "base70" ],
+    "authors": [
+        {
+            "name": "Christian Blechert",
+            "email": "christian@anysrc.net",
+            "homepage": "https://anysrc.net",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues":"https://github.com/perryflynn/base/issues"
+    },
+    "require": {
+        "php": ">=5.1.2"
+    },
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "PerryBase\\": "src/PerryBase/"
+        }
+    }
+}
